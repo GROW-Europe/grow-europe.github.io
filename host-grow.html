@@ -98,50 +98,57 @@
             border-radius: 3px;
         }
         
-        .proposal-item {
+               .proposal-item {
             background-color: #fafafa;
             padding: 1.5rem;
             margin-bottom: 1rem;
             border-radius: 8px;
-            border-left: 4px solid  #594545;;
+            border-left: 4px solid  #594545;
         }
         
         .proposal-item h3 {
             margin-top: 0;
         }
         
-        .contact-section {
-            background:  #d4c7c7;;
-            color: rgb(24, 17, 17);
-            padding: 2rem;
-            text-align: center;
+        .proposal-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .proposal-list li {
+            background-color: #fafafa;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1rem;
             border-radius: 8px;
+            border-left: 4px solid #594545;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
         }
         
-        .contact-section h2 {
-            color: rgb(21, 19, 19);
-            border-bottom: none;
-        }
-        
-        .contact-section a {
+        .proposal-number {
+            background-color: #594545;
             color: white;
-            font-size: 1.2rem;
-            text-decoration: none;
-            border-bottom: 2px solid white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 1.1rem;
         }
         
-        .contact-section a:hover {
-            opacity: 0.8;
+        .proposal-content {
+            flex: 1;
         }
         
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            
-            main {
-                padding: 1.5rem;
-            }
+        .proposal-content strong {
+            display: block;
+            color: #556677;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
         }
     </style>
 </head>
@@ -162,16 +169,18 @@
                 <p>Your proposal should include:</p>
                 
                 <div class="proposal-item">
-                    <h3>1. Host Organization name </h3>
-                    <h3>2. Available Workshop Facilities <span class="highlight"> (room capacity, coffee break capacity, equipment, accessibility)</span></h3>
-                    <h3>3. Tentative organizing committee</h3>
-                    <h3>4. Committee's vision and goals for GROW <span class="highlight">(200 words)</span></h3>
-                    <h3>5. Preferred year(s) you wish to host GROW</h3>
-                    <h3>6. Tentative program</h3>
-                    <h3>7. Funding plan</h3>
+                    <h4>1. Host Organization name </h4>
+                    <h4>2. Available Workshop Facilities <span class="highlight"> (room capacity, coffee break capacity, equipment, accessibility)</span></h4>
+                    <h4>3. Tentative organizing committee</h4>
+                    <h4>4. Committee's vision and goals for GROW <span class="highlight">(200 words)</span></h4>
+                    <h4>5. Preferred year(s) you wish to host GROW</h4>
+                    <h4>6. Tentative program</h4>
+                    <h4>7. Funding plan</h4>
                 </div>
             Send these information as a single PDF attachment to <a href="mailto:grow-europe@..">grow-europe@...</a>. The <a href="index.html">steering committee</a> will review proposals and get back to you within 6 weeks of the submission deadline.
             </section>
+
+            
             <section>
                 <h2>About GROW</h2>
                 <p>The GROW conference supports is for all students of underrepresented gender identities in mathematics, especially female students, who are interested in learning about graduate programmes and further opportunities in research, both within and outside academia. </p>
@@ -179,7 +188,7 @@
                     <strong>The conference:</strong>
                     <ul>
                         <li>Runs annually on typically early April</li>
-                        <li>Is primarily open to bachelor students from EU, EEA, EFTA, UK, and the Schengen Area, including international students</li>
+                        <li>Is primarily open to bachelor students from EU, EEA, EFTA, UK, and the Schengen Area, including international students. Early masters students are also encouraged to apply.</li>
                     </ul>
                 </div>
             </section>
